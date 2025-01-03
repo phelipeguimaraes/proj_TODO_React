@@ -1,0 +1,99 @@
+.todo {
+    background-color: #f4f4f4;
+    padding: 2rem 1rem;
+    border-radius: 5px;
+    width: 600px;
+}
+
+.todo h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    color: #333;
+}
+
+h2 {
+    color: #333;
+}
+
+.todo h3 {
+    font-weight: 500;
+    color: #333;
+}
+
+.todo p {
+    font-size: 14px;
+    color: #333;
+}
+
+.btn-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+button {
+    padding: .3rem .8rem;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    opacity: .8;
+    cursor: pointer;
+    transition: .3s;
+    color: white;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+.complete {
+    background-color: #42B72A;
+}
+
+.delete {
+    background-color: #FF3040;
+}
+
+.todo-box {
+   border-top: 1px solid #acababd6;
+   border-bottom: 1px solid #acababd6; 
+}
+
+.todo-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.25);
+}
+
+input, select {
+    border: none;
+    padding: .5rem;
+    border: 1px solid #d4d4d4;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.create-box {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    gap: 1rem;
+}
+
+.btn-create {
+    background-color: rgb(65, 65, 212);
+    width: 100px;
+}
+
+.create-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
