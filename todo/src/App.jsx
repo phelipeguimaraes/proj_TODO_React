@@ -39,12 +39,16 @@ function App() {
 
   }
 
-  
+  const removeTodo = (id) => {
+    const newTodofilted = todos.filter(todo => todo.id !== id)
 
+    setTodos(newTodofilted)
+  }
+  
   return (
     <>
       <div className="todo">
-        <Todo todos={todos} />
+        <Todo todos={todos} removeTodo={removeTodo} completedTodo={completedTodo}/>
         <CreateTodo addTodo={addTodo} />
       </div>
     </>
