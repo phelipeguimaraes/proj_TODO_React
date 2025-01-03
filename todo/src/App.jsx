@@ -48,7 +48,7 @@ function App() {
   return (
     <>
       <div className="todo">
-        <Todo todos={todos} removeTodo={removeTodo} completedTodo={completedTodo}/>
+        <Todo todos={todos} removeTodo={removeTodo}/>
         <CreateTodo addTodo={addTodo} />
       </div>
     </>
