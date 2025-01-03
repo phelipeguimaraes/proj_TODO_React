@@ -27,11 +27,25 @@ function App() {
     },
   ])
 
+  const addTodo = (title, category) => {
+    const newTodo = [...todos, {
+      id: Math.floor(Math.random() * 1000),
+      text: title,
+      category: category,
+      isCompleted: false
+    }]
+
+    setTodos(newTodo)
+
+  }
+
+  
+
   return (
     <>
       <div className="todo">
         <Todo todos={todos} />
-        <CreateTodo />
+        <CreateTodo addTodo={addTodo} />
       </div>
     </>
   );
